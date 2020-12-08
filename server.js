@@ -9,10 +9,11 @@ const PORT = process.env.PORT || 3000
 //local files
 const notFoundHandler = require('./handlers/404');
 const errorHandler = require('./handlers/500');
+const stamper = require('./middleware/stamper');
 
 //routes
 app.get('/', renderHome);
-app.get('/data', renderData);
+app.get('/data', stamper, renderData);
 app.get('/bad', (req, res, next) => {
   //anytime you put anything inside of next it will throw an error
   next('you messed up')
@@ -31,7 +32,7 @@ function renderData(req, res, next) {
   const outputObj = {
     10: "even",
     5: "odd",
-    "time": new Date()
+    "time": req.timeStamp
   }
   res.status(200).json(outputObj);
 }
