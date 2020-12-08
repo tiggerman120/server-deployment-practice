@@ -3,5 +3,5 @@
 require('dotenv').config();
 
 const server = require('./server');
-
-server.start(3001);
+//this needs to call a processenv to make heroku work
+process.env.PORT || 3001
