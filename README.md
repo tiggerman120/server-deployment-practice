@@ -8,13 +8,13 @@
 
 .env requirements
 
-- PORT - 3000
+- PORT - 3001
 
 ## running the app
 
 npm start
-endpoint: unknown currently
-  nothing returns it wont open yet
+endpoint: /
+  
 
 ## tests
  tests: npm test
