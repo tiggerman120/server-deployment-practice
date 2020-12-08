@@ -1,25 +1,19 @@
-# server-deployment-practice
+LAB - Class 01
 
-## Author
+Project: Server Deployment Practice
+Author: Garrett Cintron
+Links and Resources
+ci/cd [Github Actions](https://github.com/tiggerman120/server-deployment-practice/actions)
+back-end server url (when applicable)
+front-end application (when applicable)
+Setup
+.env requirements (where applicable)
+i.e.
 
-- Garrett Cintron
+PORT - 3000 || 3001
 
-## Setup
-
-.env requirements
-
-- PORT - 3001
-
-## running the app
-
-npm start
-endpoint: /
-  
-
-## tests
- tests: npm test
-
-## problem domain
-
-the problem domain is to create a working webpage using the demo code provided
-
+How to initialize/run your application
+ npm start
+Tests
+How do you run tests?
+npm test
