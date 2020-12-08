@@ -4,7 +4,7 @@
 require('dotenv').config();
 const express = require('express'); //server
 const app = express();//assigning the server to a variable
-//const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000
 
 //local files
 const notFoundHandler = require('./handlers/404');
