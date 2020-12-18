@@ -17,3 +17,5 @@ How to initialize/run your application
 Tests
 How do you run tests?
 npm test
+[dev heroku](https://garrett-server-deploy-dev.herokuapp.com/)
+[prod heroku](https://garrett-server-deploy-prod.herokuapp.com/)
